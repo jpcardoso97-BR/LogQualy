@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormQualyActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogoForm"
+        android:layout_width="173dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <EditText
+        android:id="@+id/editTextSenhaForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Insira uma senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editTextEmailForm"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmailForm"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailForm" />
+
+    <EditText
+        android:id="@+id/editTextEmailForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Insira um E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoForm" />
+
+    <Button
+        android:id="@+id/btnSalvarForm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#29C1B3"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSenhaForm"
+        app:layout_constraintStart_toStartOf="@+id/editTextSenhaForm"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenhaForm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
